@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>netcoreapp2.2</TargetFramework>
+        <RootNamespace>DbUp.AddMigrations</RootNamespace>
+        <AssemblyName>DbUp.AddMigrations</AssemblyName>
+        <PackAsTool>true</PackAsTool>
+        <ToolCommandName>dotnet-dbup</ToolCommandName>
+        <PackageOutputPath>./nupkg</PackageOutputPath>        
+    </PropertyGroup>
+    
+    <PropertyGroup>
+        <license>https://github.com/youngcm2/dbup-tool/blob/master/LICENSE</license>
+    </PropertyGroup>
+    
+    <PropertyGroup>
+        <GenerateAssemblyVersionAttribute>false</GenerateAssemblyVersionAttribute>
+        <GenerateAssemblyFileVersionAttribute>false</GenerateAssemblyFileVersionAttribute>
+        <GenerateAssemblyInformationalVersionAttribute>false</GenerateAssemblyInformationalVersionAttribute>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="CommandLineParser" Version="2.6.0" />
+      <PackageReference Include="Microsoft.Extensions.Logging" Version="3.1.0" />
+      <PackageReference Include="Microsoft.Extensions.Logging.Console" Version="3.1.0" />
+    </ItemGroup>
+
+</Project>
